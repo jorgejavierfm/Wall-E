@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="FlowChartDesigner.ChartElement">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>BQCAMAAABABAAEIABABRGQAAQBAAwAEASgAAAKAFgAo=</HashCode>
+      <FileName>ChartElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.ChartElementBuilder">
+    <Position X="4" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAgAAAAAAAAACIAAA=</HashCode>
+      <FileName>ChartElementBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.ChartElementCollection">
+    <Position X="3.75" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAgAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ChartElementCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.Connection">
+    <Position X="3.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAAAAAEAAAAAAAAAAAACAAAAAIAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Connection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.Pin">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAQAAAQAgACAAAAAAgAAAAAAAAAEAAAAAAAE=</HashCode>
+      <FileName>Pin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.PinCollection">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAABAACAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PinCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="FlowChartDesigner.PinOrientation">
+    <Position X="7" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgIAAAAAAAAAAAAAAAAAAAAAAAAACACAIAABAAI=</HashCode>
+      <FileName>PinOrientation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FlowChartDesigner.PinType">
+    <Position X="8.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PinType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

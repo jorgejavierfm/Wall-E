@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="FlowChartDesigner.ChartElement" Collapsed="true">
+    <Position X="5.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQCAMAAABABAAEIABABRGQAAQBAAwAEASgAAAKAHgAo=</HashCode>
+      <FileName>ChartElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.ChartElements.AssignationChartElement">
+    <Position X="2.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAABAAAAAIABAAAAAQAAAAAAAAQAgAAAAAAAAA=</HashCode>
+      <FileName>ChartElements\AssignationChartElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.ChartElements.ConditionalChartElement">
+    <Position X="4.75" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAABACAAAIABAAAAAAAAAAAAAAAAgAAAAAAgAA=</HashCode>
+      <FileName>ChartElements\ConditionalChartElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.ChartElements.CommandChartElement">
+    <Position X="10.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAABAAAAAIABAAAQAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>ChartElements\CommandChartElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.Builders.ConditionalChartElementBuilder">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAA=</HashCode>
+      <FileName>Builders\ConditionalChartElementBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.ChartElementBuilder" Collapsed="true">
+    <Position X="6" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAgAAAAAAAAACIAAA=</HashCode>
+      <FileName>ChartElementBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.Builders.CommandChartElementBuilder">
+    <Position X="2.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAA=</HashCode>
+      <FileName>Builders\CommandChartElementBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.Builders.AssignationChartElementBuilder">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAA=</HashCode>
+      <FileName>Builders\AssignationChartElementBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.Builders.EndChartElementBuilder">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAA=</HashCode>
+      <FileName>Builders\EndChartElementBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.Builders.BeginChartElementBuilder">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAA=</HashCode>
+      <FileName>Builders\BeginChartElementBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.ChartElements.EndChartElement">
+    <Position X="7" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAIABAAAAAAAAAAAAAAAAgAAAAAAgAA=</HashCode>
+      <FileName>ChartElements\EndChartElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.BeginChartElement">
+    <Position X="0.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAIABAAAAAAAAAAAAAAAAgAAAAAAgAA=</HashCode>
+      <FileName>ChartElements\BeginChartElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.ChartElements.ActivityChartElement">
+    <Position X="8.75" Y="6.5" Width="1.5" />
+    <InheritanceLine Type="FlowChartDesigner.ChartElement" FixedFromPoint="true">
+      <Path>
+        <Point X="6.25" Y="10.812" />
+        <Point X="6.25" Y="11.187" />
+        <Point X="9.5" Y="11.187" />
+        <Point X="9.5" Y="9.146" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAABAAAAAIABAAAAAAAAAAAAAAAAgAAAAAQAAA=</HashCode>
+      <FileName>ChartElements\ActivityChartElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.Builders.ActivityChartElementBuilder">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAA=</HashCode>
+      <FileName>Builders\ActivityChartElementBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.Builders.NormalChartBuilder" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <InheritanceLine Type="FlowChartDesigner.ChartElementBuilder" ManuallyRouted="true">
+      <Path>
+        <Point X="7.5" Y="2.971" />
+        <Point X="8.25" Y="2.971" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\NormalChartBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowChartDesigner.Builders.PredefinedChartBuilder">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\PredefinedChartBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

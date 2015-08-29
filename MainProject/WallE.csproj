@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB07D530-1082-440E-88D2-EFF049DBEC93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Walle</RootNamespace>
+    <AssemblyName>MainProject</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Wall-e.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Interpreter.cs" />
+    <Compile Include="Components\Motor.cs" />
+    <Compile Include="Components\Robot.cs" />
+    <Compile Include="Components\Sensors\GPS.cs" />
+    <Compile Include="Components\Sensors\ISensor.cs" />
+    <Compile Include="Components\Sensors\Scales.cs" />
+    <Compile Include="Components\Sensors\Sensors.cs" />
+    <Compile Include="Components\Sensors\Thermometer.cs" />
+    <Compile Include="Components\Sensors\Ultrasonic.cs" />
+    <Compile Include="Components\Sensors\Webcam.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Misc\RobotDeathException.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialogs\DlgEditCell.resx">
+      <DependentUpon>DlgEditCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialogs\DlgEditItem.resx">
+      <DependentUpon>DlgEditItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialogs\DlgEditRobot.resx">
+      <DependentUpon>DlgEditRobot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialogs\DlgNewActivity.resx">
+      <DependentUpon>DlgNewActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialogs\DlgNewMap.resx">
+      <DependentUpon>DlgNewMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormAlgDesigner.resx">
+      <DependentUpon>FormAlgDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormManual.resx">
+      <DependentUpon>FormManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormMapDesigner.resx">
+      <DependentUpon>FormMapDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RobotLogic.cd" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Scenario\Cell.cs" />
+    <Compile Include="Scenario\Item.cs" />
+    <Compile Include="Scenario\Map.cs" />
+    <Compile Include="UI\Dialogs\DlgEditCell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Dialogs\DlgEditCell.Designer.cs">
+      <DependentUpon>DlgEditCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialogs\DlgEditItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Dialogs\DlgEditItem.Designer.cs">
+      <DependentUpon>DlgEditItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialogs\DlgEditRobot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Dialogs\DlgEditRobot.Designer.cs">
+      <DependentUpon>DlgEditRobot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialogs\DlgNewActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Dialogs\DlgNewActivity.Designer.cs">
+      <DependentUpon>DlgNewActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialogs\DlgNewMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Dialogs\DlgNewMap.Designer.cs">
+      <DependentUpon>DlgNewMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormAlgDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormAlgDesigner.Designer.cs">
+      <DependentUpon>FormAlgDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormManual.Designer.cs">
+      <DependentUpon>FormManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormMapDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormMapDesigner.Designer.cs">
+      <DependentUpon>FormMapDesigner.cs</DependentUpon>
+    </Compile>
+    <None Include="UI\UIDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\access.ico" />
+    <Content Include="Resources\amor.ico" />
+    <Content Include="Resources\ark2.ico" />
+    <Content Include="Resources\grass.png" />
+    <Content Include="Resources\Lava.png" />
+    <Content Include="Resources\robot.png" />
+    <Content Include="Resources\robotDown.png" />
+    <Content Include="Resources\robotLeft.png" />
+    <Content Include="Resources\robotRight.png" />
+    <Content Include="Resources\robotUp.png" />
+    <Content Include="Resources\Sand.png" />
+    <Content Include="Resources\Water.png" />
+    <Content Include="Wall-e.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExpressionEvaluator\ExpressionEvaluator.csproj">
+      <Project>{1748BFDE-2A24-493B-8454-9312717FF91B}</Project>
+      <Name>ExpressionEvaluator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlowChartDesigner\FlowChartDesigner.csproj">
+      <Project>{92684859-A0B5-4D33-AA12-84DC3836969E}</Project>
+      <Name>FlowChartDesigner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Components\Components.csproj">
+      <Project>{E596FE04-F5E8-4305-8EA3-B3C491978DB0}</Project>
+      <Name>Components</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

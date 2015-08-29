@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="Walle.UI.FormAlgDesigner">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAAEAQEBACAgQAjIABCIgCAigIAACWoQIgAgAAACECw=</HashCode>
+      <FileName>UI\FormAlgDesigner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Walle.UI.FormMain">
+    <Position X="4.5" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAyOUDMAGDAGKxwBACDABAUDQIiIBAIRJgQQQAACAAk=</HashCode>
+      <FileName>UI\FormMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Walle.UI.FormManual">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABABECAAACACAAAAAgCAgCACRAAQAQAAACAgAAAAAAA=</HashCode>
+      <FileName>UI\FormManual.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Walle.UI.FormMapDesigner">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>JACTmkcRDWBFSI3CAMDSwoECEABhgYNCBkgQEoAAkF0=</HashCode>
+      <FileName>UI\FormMapDesigner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

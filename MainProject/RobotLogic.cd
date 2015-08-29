@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Walle.Scenario.Cell" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAAAEAAQAAAYEAAAgABAAAAAQAAAEABA=</HashCode>
+      <FileName>Scenario\Cell.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Walle.Scenario.InteractionEventArgs" Collapsed="true">
+    <Position X="2.5" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAIAAAAA=</HashCode>
+      <FileName>Scenario\Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Walle.Scenario.Item">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAEAQAAAAQAACAAABAAAAIAgAAgABA=</HashCode>
+      <FileName>Scenario\Item.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Walle.Scenario.Map">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAEAEAAAAAIDAAAAAIAJAAAAAIAAAQQQAAAAAA=</HashCode>
+      <FileName>Scenario\Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Walle.Components.Robot">
+    <Position X="6.25" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAAAIAIAAEAiACAAACAIAABBABAAAAAAAACQA=</HashCode>
+      <FileName>Components\Robot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Motor" />
+      <Property Name="Direction" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Walle.Components.Motor">
+    <Position X="8.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAABACAEAAAgAAABAAABkAREAAAAACAAAAAAA=</HashCode>
+      <FileName>Components\Motor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Map" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Walle.Components.Sensors.RobotSensors">
+    <Position X="3.25" Y="8.25" Width="1.5" />
+    <AssociationLine Name="Scale" Type="Walle.Components.Sensors.Scale">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.234" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAEAAAAAAAEAAIAAAAIAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Components\Sensors\Sensors.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Thermometer" />
+      <Property Name="Ultrasonic" />
+      <Property Name="Webcam" />
+      <Property Name="Scale" />
+      <Property Name="GPS" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Walle.Components.Sensors.Scale">
+    <Position X="2.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAKBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Sensors\Scales.cs</FileName>
+      <NewMemberFileName>Components\Sensors\GPS.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Walle.Components.Sensors.Thermometer">
+    <Position X="5.75" Y="11.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Components\Sensors\Thermometer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Walle.Components.Sensors.Ultrasonic">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Sensors\Ultrasonic.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Walle.Components.Sensors.Webcam">
+    <Position X="0.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFABAAAAAAAAAAAAAgAQAAAAABAAAAAAAAEAA=</HashCode>
+      <FileName>Components\Sensors\Webcam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Walle.Components.Sensors.GPS">
+    <Position X="6" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAEAAAKAAAAAAAAAAAAAAAAAQAAAAYAA=</HashCode>
+      <FileName>Components\Sensors\GPS.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Walle.Components.Sensors.ISensor">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <AssociationLine Name="Map" Type="Walle.Scenario.Map">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.058" Y="0.102" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Sensors\ISensor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Map" />
+    </ShowAsAssociation>
+  </Interface>
+  <Enum Name="Walle.Components.Direction">
+    <Position X="9.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAABAAQ=</HashCode>
+      <FileName>Components\Robot.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
