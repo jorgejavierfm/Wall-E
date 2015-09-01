@@ -9,15 +9,21 @@ An instruction is the basic command that Wall-E can execute. Every instruction i
 
 Some basic instructions work with Wall-E (Go Forward, Go Backwards, Turn Right, Turn Left), others allow Wall-E to make decisions based on a conditional. The execution of these instructions begin with the special instruction Begin (green dot).
 
+![alt tag](Examples/InstructionEx.png)
+
 **ACTIVITIES**
 
 A set of instructions can be grouped into an Activity, this activity can also be used as an instruction. Every time we want to execute this set of instructions we just need to call the Activity by the name assigned during their creation. 
 
 Activities can´t receive parameters. To receive data and return results global variables will be used, so they can be used in any context.
 
+![alt tag](Examples/ActivityExample.png)
+
 **MEMORY**
 
 Wall-E can store the main program, auxiliary activities and variables. Variables have a name to identify them and are all Integer or Boolean. These variables do not have to be declared but once its value is assigned it cannot be changed to another type.
+
+![alt tag](Examples/VariablesEx.png)
 
 **ARRAYS**
 
@@ -51,6 +57,12 @@ Another aspect is that the field does not have to be regular. For example, there
 Every object has characteristics such as color, weight, size, shape. A heavy object will prevent Wall-E from advance,but a light one can be pushed in the direction Wall-E is moving. Wall-E can push various consecutive objects as long as his power (property of Wall-E) is greater than the sum of the weight of every object he is pushing.
 
 When an object moves it may fall into a hole, lava or water. This can be used by Wall-E to avoid some hazardous conditions like a hole in the ground. Some objects can be picked as long as Wall-E can lift them up. Wall-E has a limited amount of space, so the weight and the volume of the object have to be lower than the power and capacity of Wall-E.
+
+**DFS Algorithm Example**
+
+![alt tag](Examples/DFS.png)
+
+
 
 
 
