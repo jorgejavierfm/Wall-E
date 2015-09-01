@@ -3,23 +3,23 @@ Wall-E is a robot located in a rectangular terrain. He can advance forward, back
 
 Wall-E has a processing unit capable of executing different instructions. Moreover, he is equipped with different sensors tasked with the detection of various characteristic of the environment where he is located. For example, Wall-E has an ultrasonic sensor capable of determining the distance to an object in front of him, he also has a webcam to identify the color of every object he encounter. This sensors will allow Wall-E to make decisions based on the information he is getting from the environment.
 
-INSTRUCTIONS
+**INSTRUCTIONS**
 
 An instruction is the basic command that Wall-E can execute. Every instruction is followed by another until the special instruction End (red dot).
 
 Some basic instructions work with Wall-E (Go Forward, Go Backwards, Turn Right, Turn Left), others allow Wall-E to make decisions based on a conditional. The execution of these instructions begin with the special instruction Begin (green dot).
 
-ACTIVITIES
+**ACTIVITIES**
 
 A set of instructions can be grouped into an Activity, this activity can also be used as an instruction. Every time we want to execute this set of instructions we just need to call the Activity by the name assigned during their creation. 
 
 Activities can´t receive parameters. To receive data and return results global variables will be used, so they can be used in any context.
 
-MEMORY
+**MEMORY**
 
 Wall-E can store the main program, auxiliary activities and variables. Variables have a name to identify them and are all Integer or Boolean. These variables do not have to be declared but once its value is assigned it cannot be changed to another type.
 
-ARRAYS
+**ARRAYS**
 
 An important resource in the programming of Wall-E are the arrays. These arrays are similar to variables but their indexer will be part of their name. For example, a[2,1] = 4 is fine but b = a fails because "a" does not exist as a variable.
 
@@ -27,7 +27,7 @@ Arrays do not have an specific size and the type of elements they hold is determ
 
 Any type of expresion can be indexed. For example, a[3,2]; map[GPS.X,GPS.Y]; marks[amount].
 
-EXPRESSIONS
+**EXPRESSIONS**
 
 There are instructions that involves values. The programming of Wall-E could involve numeric constants (-3,0,100,20) or booleans (true,false). Variables are another type of expression because they have a value.
 
@@ -40,13 +40,13 @@ Example of Expressions:
 
 Another type of expression could be the values of Wall-E sensors. This can be done invoking the name of the sensor and then his property. For example, Ultrasonic.Distance return the distance to the nearest object in front of Wall-E.
 
-ENVIRONMENT
+**ENVIRONMENT**
 
 The environment in which Wall-E is located will be a rectangular field divided into sections (the environment can be designed with the Map Designer). These sections can have objects or not. These objects have different properties that determine if Wall-E can operate with them. For example, the weight can indicate whether the object can be pushed by the robot or not. The size indicates whether the robot can carry the object or not.
 
 Another aspect is that the field does not have to be regular. For example, there may be squares with water, holes, lava, etc. This allows a wider range of actions by Wall-E. For example, push a box into a hole with the objective of passing over.
 
-OBJECTS
+**OBJECTS**
 
 Every object has characteristics such as color, weight, size, shape. A heavy object will prevent Wall-E from advance,but a light one can be pushed in the direction Wall-E is moving. Wall-E can push various consecutive objects as long as his power (property of Wall-E) is greater than the sum of the weight of every object he is pushing.
 
